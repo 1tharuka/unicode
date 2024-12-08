@@ -1,0 +1,276 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo{
+ display: flex;
+ width: fit-content;
+ cursor: pointer;
+ img{
+  width: 50px;
+  height: 40px;
+ }
+ h2{
+  font-size: 20px;
+  text-decoration: solid;
+  font-weight: bold;
+ }
+}
+
+nav{
+ display: flex;
+ width: 100%;
+ justify-content: space-between;
+ align-items: center;
+ padding: 9px 9px;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+ul{
+ list-style: none;
+ display: flex;
+ flex-direction: row;
+ gap: 20px;
+ li,a{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  
+ }
+ a:hover{
+   color: #05dfd7;
+ }
+ 
+}
+.link__nav_traning, .link__nav_rentals {
+ display: flex;
+ flex-direction: row;
+ text-align: center;
+ justify-content: center;
+ align-items: center;
+ gap: 2px;
+ img{
+  width: 20px;
+ }
+}
+
+.text__underling{
+  width: 100px;
+  background-color: green;
+  height: 2px;
+}
+
+button{
+ width: 100px;
+ height: 40px;
+ color: white;
+ background-color: black;
+ border-radius: 50px;
+ border: none;
+ cursor: pointer;
+}
+.icon__all{
+ display: flex;
+ flex-direction: row;
+ gap: 30px;
+ align-items: center;
+ img{
+  cursor: pointer;
+ }
+}
+.search__icons{
+  background-color: black;
+ color: white;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ padding: 2px 2px;
+}
+
+/* main constand */
+main{
+  margin-top: 20px;
+  padding: 20px 20px;
+}
+.main__constand{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  h1{
+    font-size: 50px;
+    font-weight: 900;
+  }
+  p{
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+
+
+.bootcamp__name{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 5px;
+  border-radius: 20px;
+}
+.container:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.header{
+  h2{
+    font-size: 20px;
+    font-weight: 900;
+  }
+}
+.content{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  button{
+    margin-top: 30px;
+    margin-left: 20px;
+    background-color: white;
+  }
+}
+
+.container_r{
+  background-color: #7c73e6;
+}
+.container_r:hover{
+  background-image: linear-gradient(to right top, #053718, #004941, #005a87, #0063ce, #1251eb);
+}
+.container_a{
+  background-color: #bf68f6;
+}
+.container_a:hover{
+  background-image: linear-gradient(to right top, #373605, #6a3c00, #aa2a1d, #e20067, #eb12d5);
+}
+.container_w{
+  background-color: #05dfd7;
+}
+.container_w:hover{
+  background-image: linear-gradient(to right top, #850e97, #e10060, #f65100, #cba900, #45eb12);
+}
+.container_e{
+  background-color: #f76262;
+}
+.container_e:hover{
+  background-image: linear-gradient(to right top, #970e4e, #c63530, #d37200, #b8b000, #5eeb12);
+}
+
+.b1{
+    color: #7c73e6;
+}
+
+
+.b2{
+ color: #bf68f6;
+}
+.b3{
+ color: #05dfd7;
+}
+.b4{
+ color: #f76262;
+}
+
+
+/* footer */
+
+.footer__main{
+  display: flex;
+  flex-direction: row;
+  margin-top: 90px;
+  background-color: #b7f3f1;
+  padding: 40px 20px;
+  justify-content: space-between;
+}
+.footer__logo-content{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.link__line{
+  width: 450px;
+  height: 1px;
+  background-color: black;
+ 
+}
+
+.footer__contact{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__link{
+  li{
+    a{
+      font-size: 15px;
+    }
+  }
+}
+.fallow__logo{
+  margin-top: 20px;
+  display: flex;
+  gap: 50px;
+  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.play__logo{
+  margin-top: 20px;
+  display: flex;
+  gap: 50px;
+  margin-left: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__copy{
+  margin-left: 200px;
+  padding: 10px 10px;
+}
+
+/*media screnn size  */
+@media(max-width: 780px) {
+  .bootcamp__name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .nav__link{
+    display: none;
+  }
+  .footer__main{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer__copy{
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
